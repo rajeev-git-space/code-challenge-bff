@@ -1,23 +1,3 @@
-// import { Catalog } from "./services/catalog";
-// import { ruleFactory } from "./pricing/ruleFactory";
-// import { Checkout } from "./checkout";
-// import { cents } from "./utils/money";
-
-// const catalog = new Catalog();
-
-// const configs = [
-//     { type: 'offer', id: 'atv-offer', sku: 'atv', x: 3, y: 2 },
-//     { type: 'bulkPrice', id: 'ipd-bulk', sku: 'ipd', minQty: 5, priceCents: cents(499.99) }
-// ]
-
-// const rules = ruleFactory(catalog, configs);
-// const co = new Checkout(rules, catalog);
-
-// ['atv', 'atv', 'atv', 'vga'].forEach(sku => co.scan(sku));
-// console.log("subtotal:", co.getSubtotalCents());
-// console.log('discounts:', co.getDiscounts());
-// console.log("total:", co.total());
-
 import { Catalog } from './services/catalog';
 import { Checkout } from './checkout';
 import { ruleFactory } from './pricing/ruleFactory';
